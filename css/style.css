@@ -1,0 +1,219 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url(../fonts/bebasneue-regular-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/poppins-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Italiana";
+  src: url(../fonts/italiana-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* style Utama */
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.15rem;
+  color: #333;
+  background-color: white;
+  background-image: url(../img/aset/criss-cross.png);
+}
+.container {
+  width: 950px;
+  margin: 60px auto 0;
+  background-color: white;
+  position: relative;
+}
+.topbar {
+  width: 100%;
+  top: 0;
+  height: 40px;
+  background-color: blueviolet;
+  position: fixed;
+  border-bottom: 5px double white;
+  z-index: 9999;
+}
+
+/* header yg memiliki list link */
+.header {
+  font-family: "Italiana", "Arial Narrow", sans-serif;
+  padding: 20px;
+  padding-bottom: 10px;
+  color: blueviolet;
+}
+
+.header h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 12px;
+  color: blueviolet;
+}
+.header li a {
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: bold;
+}
+
+/* Ketika mouse diarahkan ke link */
+.header a:hover {
+  font-size: 1.2em;
+  transition: 500ms;
+  color: blue;
+}
+
+/* Ketika link diklik */
+/* .header a:active {
+    font-style: italic;
+} */
+
+/* class gambar */
+.hero {
+  height: 400px;
+  background-image: url(../img/aset/rain.jpg);
+  background-size: cover;
+  background-position: 0 -100px;
+  border-top: 4px double blueviolet;
+  border-bottom: 4px double blueviolet;
+}
+.main {
+  width: 600px;
+  /* height: 450px; */
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+  text-align: justify;
+  overflow: auto;
+  background-color: antiquewhite;
+}
+
+/* heading 2 */
+.main h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: blueviolet;
+}
+/* ukuran dan margin class penulis di class main */
+.main .penulis {
+  font-size: calc(1em - 6.4px); /* 12px*/
+  margin-top: 1px;
+}
+
+/* link pada class penulis */
+.main .penulis a {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+.main .penulis a:hover {
+  font-size: 1.2em;
+  transition: 500ms;
+  color: blue;
+  font-weight: bold;
+}
+
+/* Paragraf */
+.main p {
+  margin-bottom: 25px;
+  font-size: calc(1em - 3.4px);
+}
+
+/* mengatur jarak baris pertama / paragraf */
+.main .p1,
+article {
+  text-indent: calc(2em - 6.8px);
+}
+
+/* Class sidebar */
+.sidebar {
+  width: 300px;
+  float: right;
+  padding: calc(1em + 1.6px);
+  border-bottom: 1px solid gray;
+}
+
+.sidebar h3 {
+  color: blueviolet;
+}
+
+.sidebar img {
+  width: 27%;
+  height: 27%;
+  float: right;
+  padding-left: calc(1em - 8.4px);
+  margin-top: calc(2em + 3.2px);
+}
+
+.sidebar article {
+  font-size: calc(1em - 4.4px);
+  margin-top: calc(2em + 3.2px);
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.h3_sidebar{
+  width: 300px;
+  float: right;
+  text-align: left;
+  color: blueviolet;
+  padding: calc(1em + 1.6px);
+}
+.h3_sidebar, .sidebar2, .sidebar{
+  background-color: #dddd;
+}
+/* sidebar2 */
+.sidebar2 {
+  width: 300px;
+  height: 70px;
+  float: right;
+  padding: calc(1em + 1.6px);
+  overflow: auto;
+  color: blueviolet;
+}
+
+
+.sidebar2 ul {
+  /* margin-top: calc((1em - 8.4px) - 20px  ); */
+  font-size: calc(1em - 4px);
+  margin-top: -15px;
+  line-height: 20px;
+}
+
+.sidebar2 a {
+  text-decoration: none;
+  color: teal;
+}
+
+.sidebar2 a:hover {
+  background-color: white;
+  font-size: 1.1em;
+  transition: 500ms;
+  color: blue;
+}
+
+.sidebar2 a:active {
+  font-style: italic;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: calc(1em - 8.4px);
+}
+
+.footer .copy {
+  color: white;
+  text-align: left;
+  font-size: calc(1em - 2.4px);
+}
